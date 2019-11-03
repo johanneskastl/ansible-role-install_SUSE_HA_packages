@@ -1,0 +1,7 @@
+---
+# defaults file for install_SUSE_HA_packages
+
+suse_ha_packages:
+  - pacemaker
+  - pacemaker-cli 
+  - corosync
