@@ -5,3 +5,4 @@ suse_ha_packages:
   - pacemaker
   - pacemaker-cli 
   - corosync
+  - ha-cluster-bootstrap
