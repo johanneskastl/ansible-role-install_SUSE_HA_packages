@@ -17,3 +17,13 @@
   notify:
     - "Reboot"
     - "Wait for the machine(s) to be ready again"
+
+- name: 'Force installation of kernel-default instead of kernel-default-base'
+  zypper:
+    name:
+      - '-kernel-default-base'
+      - 'kernel-default'
+    state: 'installed'
+  notify:
+    - "Reboot"
+    - "Wait for the machine(s) to be ready again"
