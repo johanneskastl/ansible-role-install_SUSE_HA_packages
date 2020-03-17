@@ -6,3 +6,4 @@ suse_ha_packages:
   - pacemaker-cli 
   - corosync
   - ha-cluster-bootstrap
+  - yast2-iscsi-client
