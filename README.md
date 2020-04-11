@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-install_SUSE_HA_packages/workflows/Ansible%20Lint/badge.svg)
+
 install_SUSE_HA_packages
 =========
 
@@ -23,7 +25,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: johanneskastl.install_SUSE_HA_packages, x: 42 }
+         - { role: johanneskastl.install_SUSE_HA_packages }
 
 License
 -------
