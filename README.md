@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: johanneskastl.install_SUSE_HA_packages, x: 42 }
+         - { role: johanneskastl.install_SUSE_HA_packages }
 
 License
 -------
