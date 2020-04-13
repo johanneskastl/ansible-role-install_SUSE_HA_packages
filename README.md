@@ -33,7 +33,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: johanneskastl.install_SUSE_HA_packages }
+         - { role: 'johanneskastl.install_SUSE_HA_packages' }
 
 License
 -------
