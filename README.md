@@ -13,7 +13,15 @@ Machines must be registered in SCC and have the SUSE HA extensions enabled.
 Role Variables
 --------------
 
-`suse_ha_packages`: List of packages to install.
+`suse_ha_packages`: List of packages to install. Override this if the default value does not fit for some reason:
+```
+suse_ha_packages:
+  - pacemaker
+  - pacemaker-cli 
+  - corosync
+  - ha-cluster-bootstrap
+  - yast2-iscsi-client
+```
 
 Dependencies
 ------------
