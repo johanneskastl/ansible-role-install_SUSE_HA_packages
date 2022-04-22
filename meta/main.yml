@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'install_SUSE_HA_packages'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Install packages related to the SUSE HA functionality'
   company: 'B1 Systems GmbH'
