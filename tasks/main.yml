@@ -12,7 +12,7 @@
 
 - name: 'Install packages needed for SUSE HA'
   community.general.zypper:
-    name:  "{{ suse_ha_packages }}"
+    name: "{{ suse_ha_packages }}"
     state: 'present'
   notify:
     - 'Reboot'
