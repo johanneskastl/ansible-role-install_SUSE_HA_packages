@@ -3,7 +3,9 @@
 install_SUSE_HA_packages
 =========
 
-Install packages related to the SUSE HA functionality 
+Install packages related to the SUSE HA functionality. This includes removal of kernel-default-base, if it is installed it will be replaced by the "full" kernel-default.
+
+Triggers a reboot after all of the updates were installed.
 
 Requirements
 ------------
