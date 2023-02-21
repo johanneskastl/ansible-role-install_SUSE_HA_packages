@@ -19,7 +19,7 @@ Role Variables
 ```
 suse_ha_packages:
   - pacemaker
-  - pacemaker-cli 
+  - pacemaker-cli
   - corosync
   - ha-cluster-bootstrap
   - yast2-iscsi-client
@@ -28,14 +28,14 @@ suse_ha_packages:
 Dependencies
 ------------
 
-Needs the reboot role to trigger a reboot after applying all updates.
+Needs the [`johanneskastl.reboot`](https://github.com/johanneskastl/ansible-role-reboot) role to trigger a reboot after applying all updates.
 
 Example Playbook
 ----------------
 
     - hosts: servers
       roles:
-         - { role: 'johanneskastl.install_SUSE_HA_packages' }
+         - role: 'johanneskastl.install_SUSE_HA_packages'
 
 License
 -------
