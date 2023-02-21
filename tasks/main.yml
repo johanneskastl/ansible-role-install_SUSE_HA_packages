@@ -7,16 +7,16 @@
    type: 'pattern'
    state: 'present'
   notify:
-    - "Reboot"
-    - "Wait for the machine(s) to be ready again"
+    - 'Reboot'
+    - 'Wait for the machine(s) to be ready again'
 
-- name: "Install packages needed for SUSE HA"
+- name: 'Install packages needed for SUSE HA'
   community.general.zypper:
    name:  "{{ suse_ha_packages }}"
-   state: "present"
+   state: 'present'
   notify:
-    - "Reboot"
-    - "Wait for the machine(s) to be ready again"
+    - 'Reboot'
+    - 'Wait for the machine(s) to be ready again'
 
 - name: 'Force installation of kernel-default instead of kernel-default-base'
   community.general.zypper:
@@ -25,5 +25,5 @@
       - 'kernel-default'
     state: 'installed'
   notify:
-    - "Reboot"
-    - "Wait for the machine(s) to be ready again"
+    - 'Reboot'
+    - 'Wait for the machine(s) to be ready again'
