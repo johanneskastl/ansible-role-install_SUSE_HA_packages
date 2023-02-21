@@ -3,17 +3,17 @@
 
 - name: 'Install pattern ha_sles'
   community.general.zypper:
-   name: 'ha_sles'
-   type: 'pattern'
-   state: 'present'
+    name: 'ha_sles'
+    type: 'pattern'
+    state: 'present'
   notify:
     - 'Reboot'
     - 'Wait for the machine(s) to be ready again'
 
 - name: 'Install packages needed for SUSE HA'
   community.general.zypper:
-   name:  "{{ suse_ha_packages }}"
-   state: 'present'
+    name:  "{{ suse_ha_packages }}"
+    state: 'present'
   notify:
     - 'Reboot'
     - 'Wait for the machine(s) to be ready again'
